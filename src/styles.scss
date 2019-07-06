@@ -2,3 +2,62 @@
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
 
 @include mat-core();
+
+body {
+  margin: 0;
+}
+
+$sizes: ("": 20px, "-none": 0px, "-xs": 5px, "-sm": 10px, "-md": 30px, "-lg": 40px, "-xl": 50px, "-xxl": 60px);
+
+@each $name, $size in $sizes {
+  .pad#{$name} {
+        padding: $size;
+
+  }
+
+  .pad-top#{$name}{
+        padding-top: $size;
+
+  }
+
+  .pad-bottom#{$name}{
+        padding-bottom: $size;
+
+  }
+
+  .pad-right#{$name}{
+        padding-right: $size;
+
+  }
+
+  .pad-left#{$name}{
+        padding-left: $size;
+
+  }
+
+  .margin#{$name} {
+        margin: $size;
+
+  }
+
+  .margin-top#{$name}{
+        margin-top: $size;
+
+  }
+
+  .margin-bottom#{$name}{
+        margin-bottom: $size;
+
+  }
+
+  .margin-left#{$name}{
+        margin-left: $size;
+
+  }
+
+  .margin-right#{$name}{
+        margin-right: $size;
+
+  }
+
+}

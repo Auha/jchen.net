@@ -1,8 +1,10 @@
 import {NgModule} from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 import {IndexComponent} from './pages/index/index.component';
 import {routing} from './blog.routing';
+import {PostModule} from '~/libs/components/post';
 
 @NgModule({
   declarations: [
@@ -10,6 +12,8 @@ import {routing} from './blog.routing';
   ],
   imports: [
     MatCardModule,
+    FlexLayoutModule,
+    PostModule,
     routing
   ]
 })
