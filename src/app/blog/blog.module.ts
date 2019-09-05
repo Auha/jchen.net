@@ -5,6 +5,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {IndexComponent} from './pages/index/index.component';
 import {routing} from './blog.routing';
 import {PostModule} from '~/libs/components/post';
+import {PostReduxModule} from '~/libs/redux/posts';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import {PostModule} from '~/libs/components/post';
     MatCardModule,
     FlexLayoutModule,
     PostModule,
+    PostReduxModule,
     routing
   ]
 })

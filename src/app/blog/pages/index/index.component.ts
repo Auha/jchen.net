@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {Store} from '@ngxs/store';
+import {LoadPosts} from '~/libs/redux/posts';
 
 @Component({
   selector: 'app-blog-index',
@@ -6,7 +8,9 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./index.component.scss']
 })
 export class IndexComponent implements OnInit {
-  constructor() {}
+  constructor(private store: Store) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.store.dispatch(new LoadPosts());
+  }
 }
