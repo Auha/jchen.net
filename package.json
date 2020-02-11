@@ -23,8 +23,13 @@
     "@angular/platform-browser-dynamic": "8.2.14",
     "@angular/router": "8.2.14",
     "@ngxs/store": "^3.6.1",
+    "@scullyio/init": "^0.0.19",
+    "@scullyio/ng-lib-v8": "latest",
+    "@scullyio/scully": "latest",
     "core-js": "^2.5.4",
+    "front-matter": "^3.1.0",
     "hammerjs": "^2.0.8",
+    "ngx-md": "^8.1.6",
     "rxjs": "^6.5.4",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"

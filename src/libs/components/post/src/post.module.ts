@@ -2,6 +2,7 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {MatCardModule} from '@angular/material/card';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import {NgxMdModule} from 'ngx-md';
 
 import {PostComponent} from './post.component';
 
@@ -9,7 +10,8 @@ import {PostComponent} from './post.component';
   imports: [
     CommonModule,
     MatCardModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    NgxMdModule
   ],
   declarations: [PostComponent],
   exports: [PostComponent]

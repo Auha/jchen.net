@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import * as fm from 'front-matter';
+// import blog from 'raw-loader!@content/blog.md';
 
 @Component({
   selector: 'app-post',
@@ -7,8 +9,13 @@ import {Component, OnInit} from '@angular/core';
 
 })
 export class PostComponent implements OnInit {
+  post = {};
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    // this.post = fm(blog);
+  }
+
+
 }
