@@ -5,4 +5,4 @@ const routes: Routes = [
   {path: '', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule)}
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
+export const routing  = RouterModule.forRoot(routes);
