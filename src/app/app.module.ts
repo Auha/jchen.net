@@ -5,7 +5,6 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {NgxsModule} from '@ngxs/store';
 import {NgxsReduxDevtoolsPluginModule} from '@ngxs/devtools-plugin';
-import {NgxMdModule} from 'ngx-md';
 import {HttpClientModule} from '@angular/common/http';
 
 import {AppComponent} from './app.component';
@@ -23,7 +22,6 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
     FlexLayoutModule,
     NgxsModule.forRoot([]),
     NgxsReduxDevtoolsPluginModule.forRoot(),
-    NgxMdModule.forRoot(),
     HttpClientModule,
     routing,
     ScullyLibModule
